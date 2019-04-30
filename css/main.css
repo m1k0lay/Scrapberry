@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Light'), url('../fonts/gothaprolig.woff2') format('woff2'), url('../fonts/gothaprolig.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Light Italic'), url('../fonts/gothaproligita.woff2') format('woff2'), url('../fonts/gothaproligita.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro'), url('../fonts/gothaproreg.woff2') format('woff2'), url('../fonts/gothaproreg.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Medium'), url('../fonts/gothapromed.woff2') format('woff2'), url('../fonts/gothapromed.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('GothamPro-MediumItalic'), url('../fonts/gothampromediumitalic.woff2') format('woff2'), url('../fonts/gothampromediumitalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Bold'), url('../fonts/gothaprobol.woff2') format('woff2'), url('../fonts/gothaprobol.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Black';
+  src: local('Gotham Pro Black'), url('../fonts/gothaprobla.woff2') format('woff2'), url('../fonts/gothaprobla.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIDisplay';
+  src: url('../fonts/sfuidisplaybold.woff2') format('woff2'), url('../fonts/sfuidisplaybold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* box-sizing: border-box - для всего документа + фикс для наследования */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* класс для явного указания модели поведения content-box */
+.content-box-component {
+  box-sizing: content-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* сниппет для доступного скрытия элементов на странице */
+.visually-hidden:not(a),
+a.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.button {
+  background-color: transparent;
+  border: 5px solid #ffffff;
+  height: 70px;
+  color: #ffffff;
+  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  padding: 18px 46px;
+}
+
+.button:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* глобальные свойства для шрифтов */
+body {
+  font-weight: 400;
+  font-family: "Gotham Pro", "Arial", sans-serif;
+}
+
+.header-top {
+  min-height: 120px;
+}
+
+.header-top .logo {
+  width: 271px;
+  height: 43px;
+}
+
+.site-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation a {
+  color: #111111;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.header-top .call-us,
+.header-top .mail-us,
+.header-top .cart {
+  margin: 0;
+  padding-left: 60px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.call-us dd,
+.mail-us dd,
+.cart dd {
+  margin: 0;
+}
+
+.call-us dd a,
+.mail-us dd a,
+.cart .total-price {
+  color: #e3000b;
+  text-decoration: underline;
+}
+
+.header-top .call-us::before,
+.header-top .mail-us::before,
+.header-top .cart::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: -60px;
+  margin-top: 5px;
+  background-image: url("../img/phone-call.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.header-top .mail-us::before {
+  width: 36px;
+  height: 30px;
+  background-image: url("../img/mail.svg");
+}
+
+.header-top .cart::before {
+  width: 34px;
+  height: 30px;
+  margin-top: 0;
+  background-image: url("../img/shopping-cart.svg");
+}
+
+.slide-1,
+.slide-2,
+.slide-3 {
+  min-height: 775px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-1 {
+  background-image: url("../img/slide-1.jpg");
+}
+
+.slide-2 {
+  background-image: url("../img/slide-2.jpg");
+}
+
+.slide-3 {
+  background-image: url("../img/slide-3.jpg");
+}
+
+.slide-caption {
+  color: #ffffff;
+}
+
+.promo-slider h3,
+.promo-slider p {
+  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
+}
+
+.promo-slider h3 {
+  font-size: 75px;
+  margin-bottom: 25px;
+}
+
+.promo-slider p {
+  font-size: 21px;
+  margin-bottom: 50px;
+}
