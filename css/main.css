@@ -1,55 +1,55 @@
 @font-face {
-  font-family: 'Gotham Pro';
-  src: local('Gotham Pro Light'), url('../fonts/gothaprolig.woff2') format('woff2'), url('../fonts/gothaprolig.woff') format('woff');
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro Light"), url("../fonts/GothamPro-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
-  src: local('Gotham Pro Light Italic'), url('../fonts/gothaproligita.woff2') format('woff2'), url('../fonts/gothaproligita.woff') format('woff');
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro Light Italic"), url("GothamPro-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
-  src: local('Gotham Pro'), url('../fonts/gothaproreg.woff2') format('woff2'), url('../fonts/gothaproreg.woff') format('woff');
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro"), url("../fonts/GothamPro.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
-  src: local('Gotham Pro Medium'), url('../fonts/gothapromed.woff2') format('woff2'), url('../fonts/gothapromed.woff') format('woff');
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro Medium"), url("../fonts/GothamPro-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
-  src: local('GothamPro-MediumItalic'), url('../fonts/gothampromediumitalic.woff2') format('woff2'), url('../fonts/gothampromediumitalic.woff') format('woff');
+  font-family: "Gotham Pro";
+  src: local("GothamPro-MediumItalic"), url("../fonts/GothamPro-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Gotham Pro';
-  src: local('Gotham Pro Bold'), url('../fonts/gothaprobol.woff2') format('woff2'), url('../fonts/gothaprobol.woff') format('woff');
+  font-family: "Gotham Pro";
+  src: local("Gotham Pro Bold"), url("../fonts/GothamPro-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham Pro Black';
-  src: local('Gotham Pro Black'), url('../fonts/gothaprobla.woff2') format('woff2'), url('../fonts/gothaprobla.woff') format('woff');
+  font-family: "Gotham Pro Black";
+  src: local("Gotham Pro Black"), url("../fonts/GothamPro-Black.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SFUIDisplay';
-  src: url('../fonts/sfuidisplaybold.woff2') format('woff2'), url('../fonts/sfuidisplaybold.woff') format('woff');
+  font-family: "SFUIDisplay";
+  src: local("SFUIDisplay Bold"), url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -106,10 +106,12 @@ input[type="radio"].visually-hidden {
   height: 70px;
   color: #ffffff;
   font-family: "Gotham Pro Black", "Arial Black", sans-serif;
-  font-size: 21px;
+  font-size: 22px;
+  line-height: 26px;
   text-transform: uppercase;
   border-radius: 40px;
   padding: 18px 46px;
+  display: inline-block;
 }
 
 .button:hover {
@@ -147,11 +149,16 @@ body {
   line-height: 40px;
 }
 
+.site-navigation a:hover {
+  color: #830009;
+}
+
+
 .header-top .call-us,
 .header-top .mail-us,
 .header-top .cart {
   margin: 0;
-  padding-left: 60px;
+  padding-left: 45px;
   font-size: 12px;
   font-weight: 700;
 }
@@ -176,7 +183,7 @@ body {
   position: absolute;
   width: 30px;
   height: 30px;
-  margin-left: -60px;
+  margin-left: -45px;
   margin-top: 5px;
   background-image: url("../img/phone-call.svg");
   background-position: 0 0;
@@ -227,11 +234,43 @@ body {
 }
 
 .promo-slider h3 {
-  font-size: 75px;
+  font-size: 90px;
   margin-bottom: 25px;
 }
 
 .promo-slider p {
-  font-size: 21px;
+  font-size: 24px;
   margin-bottom: 50px;
 }
+
+.our-products {
+  padding-top: 80px;
+}
+
+.section-header {
+  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
+  font-size: 43px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.our-products .diaries,
+.our-products .document-covers,
+.our-products .diplomas,
+.our-products .bags {
+  padding-top: 275px;
+  background-image: url("../img/diaries.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.our-products .diaries::before,
+.our-products .document-covers::before,
+.our-products .diplomas::before,
+.our-products .bags::before {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
