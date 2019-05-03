@@ -243,7 +243,7 @@ body {
   margin-bottom: 50px;
 }
 
-.our-products {
+.front-page-section {
   padding-top: 80px;
   padding-bottom: 60px;
 }
@@ -324,4 +324,49 @@ body {
   background-image: url("../img/bags.svg");
 }
 
+.market {
+  background-color: #f1f1f1;
+  margin-bottom: -100px;
+}
 
+.market .product-card {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 100px;
+}
+
+.product-card .product-img {
+  border-radius: 50%;
+}
+
+.product-card .product-title {
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.product-card .card-body {
+  padding: 0;
+  padding-left: 50px;
+}
+
+.product-card .product-caption {
+  font-weight: 700;
+  font-size: 24px;
+  color: #686868;
+  margin-bottom: 15px;
+}
+
+.product-card .product-price {
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+  color: #e3000b;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.product-card .add-to-card-link {
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+  color: #e3000b;
+  font-size: 28px;
+  text-decoration: underline;
+}
