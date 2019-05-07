@@ -1,57 +1,65 @@
 @font-face {
+  font-style: normal;
+  font-weight: 300;
   font-family: "Gotham Pro";
+
   src: local("Gotham Pro Light"), url("../fonts/GothamPro-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
 }
 
 @font-face {
+  font-style: italic;
+  font-weight: 300;
   font-family: "Gotham Pro";
+
   src: local("Gotham Pro Light Italic"), url("GothamPro-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
 }
 
 @font-face {
+  font-style: normal;
+  font-weight: 400;
   font-family: "Gotham Pro";
+
   src: local("Gotham Pro"), url("../fonts/GothamPro.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
+  font-style: normal;
+  font-weight: 500;
   font-family: "Gotham Pro";
+
   src: local("Gotham Pro Medium"), url("../fonts/GothamPro-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham Pro";
-  src: local("GothamPro-MediumItalic"), url("../fonts/GothamPro-MediumItalic.woff") format("woff");
-  font-weight: 500;
   font-style: italic;
-}
-
-@font-face {
+  font-weight: 500;
   font-family: "Gotham Pro";
+
+  src: local("GothamPro-MediumItalic"), url("../fonts/GothamPro-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Gotham Pro";
+
   src: local("Gotham Pro Bold"), url("../fonts/GothamPro-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham Pro Black";
-  src: local("Gotham Pro Black"), url("../fonts/GothamPro-Black.woff") format("woff");
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
+  font-family: "Gotham Pro Black";
+
+  src: local("Gotham Pro Black"), url("../fonts/GothamPro-Black.woff") format("woff");
 }
 
 @font-face {
-  font-family: "SFUIDisplay";
-  src: local("SFUIDisplay Bold"), url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff");
-  font-weight: 700;
   font-style: normal;
+  font-weight: 700;
+  font-family: "SFUIDisplay";
+
+  src: local("SFUIDisplay Bold"), url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff");
 }
 
 /* box-sizing: border-box - для всего документа + фикс для наследования */
@@ -101,22 +109,38 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
-  background-color: transparent;
-  border: 5px solid #ffffff;
+  display: inline-block;
   height: 70px;
-  color: #ffffff;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
+  padding: 18px 46px;
+
   font-size: 22px;
   line-height: 26px;
+  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
+  color: #ffffff;
   text-transform: uppercase;
+
+  background-color: transparent;
+  border: 5px solid #ffffff;
   border-radius: 40px;
-  padding: 18px 46px;
-  display: inline-block;
 }
 
 .button:hover {
   color: #ffffff;
   text-decoration: none;
+}
+
+.link {
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 42px;
+  color: #e3000b;
+  text-decoration: underline;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /* глобальные свойства для шрифтов */
@@ -135,18 +159,19 @@ body {
 }
 
 .site-navigation {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .site-navigation a {
-  color: #111111;
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
+  color: #111111;
 }
 
 .site-navigation a:hover {
@@ -159,8 +184,9 @@ body {
 .header-top .cart {
   margin: 0;
   padding-left: 45px;
-  font-size: 12px;
+
   font-weight: 700;
+  font-size: 12px;
 }
 
 .call-us dd,
@@ -181,18 +207,21 @@ body {
 .header-top .cart::before {
   content: "";
   position: absolute;
+
   width: 30px;
   height: 30px;
-  margin-left: -45px;
   margin-top: 5px;
+  margin-left: -45px;
+
   background-image: url("../img/phone-call.svg");
-  background-position: 0 0;
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .header-top .mail-us::before {
   width: 36px;
   height: 30px;
+
   background-image: url("../img/mail.svg");
 }
 
@@ -200,6 +229,7 @@ body {
   width: 34px;
   height: 30px;
   margin-top: 0;
+
   background-image: url("../img/shopping-cart.svg");
 }
 
@@ -207,8 +237,9 @@ body {
 .slide-2,
 .slide-3 {
   min-height: 775px;
-  background-position: center center;
+
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -234,13 +265,15 @@ body {
 }
 
 .promo-slider h3 {
-  font-size: 90px;
   margin-bottom: 25px;
+
+  font-size: 90px;
 }
 
 .promo-slider p {
-  font-size: 24px;
   margin-bottom: 50px;
+
+  font-size: 24px;
 }
 
 .front-page-section {
@@ -249,55 +282,56 @@ body {
 }
 
 .section-header {
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
-  font-size: 43px;
-  text-align: center;
   margin-top: 0;
   margin-bottom: 100px;
+
+  font-size: 43px;
+  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
+  text-align: center;
 }
 
 .product-category .header {
+  margin-bottom: 30px;
+
+  font-size: 24px;
   font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 30px;
 }
 
 .product-category .caption {
-  font-weight: 700;
-  color: #6e6e6e;
-  font-size: 22px;
   margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 22px;
+  color: #6e6e6e;
   -webkit-hyphens: auto;
-  -webkit-hyphenate-limit-before: 3;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+
   -webkit-hyphenate-limit-after: 3;
+  -webkit-hyphenate-limit-before: 3;
   -webkit-hyphenate-limit-chars: 6 3 3;
-  -webkit-hyphenate-limit-lines: 2;
+     -moz-hyphenate-limit-chars: 6 3 3;
+      -ms-hyphenate-limit-chars: 6 3 3;
+          hyphenate-limit-chars: 6 3 3;
   -webkit-hyphenate-limit-last: always;
+     -moz-hyphenate-limit-last: always;
+      -ms-hyphenate-limit-last: always;
+          hyphenate-limit-last: always;
+  -webkit-hyphenate-limit-lines: 2;
+     -moz-hyphenate-limit-lines: 2;
+      -ms-hyphenate-limit-lines: 2;
+          hyphenate-limit-lines: 2;
   -webkit-hyphenate-limit-zone: 8%;
-
-  -moz-hyphens: auto;
-  -moz-hyphenate-limit-chars: 6 3 3;
-  -moz-hyphenate-limit-lines: 2;
-  -moz-hyphenate-limit-last: always;
-  -moz-hyphenate-limit-zone: 8%;
-
-  -ms-hyphens: auto;
-  -ms-hyphenate-limit-chars: 6 3 3;
-  -ms-hyphenate-limit-lines: 2;
-  -ms-hyphenate-limit-last: always;
-  -ms-hyphenate-limit-zone: 8%;
-
-  hyphens: auto;
-  hyphenate-limit-chars: 6 3 3;
-  hyphenate-limit-lines: 2;
-  hyphenate-limit-last: always;
-  hyphenate-limit-zone: 8%;
+     -moz-hyphenate-limit-zone: 8%;
+      -ms-hyphenate-limit-zone: 8%;
+          hyphenate-limit-zone: 8%;
 }
 
 .product-category .order-link {
-  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
   font-size: 24px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
   text-decoration: underline;
 }
@@ -307,9 +341,10 @@ body {
 .our-products .diplomas,
 .our-products .bags {
   padding-top: 275px;
+
   background-image: url("../img/diaries.svg");
-  background-position: top center;
   background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .our-products .document-covers {
@@ -329,9 +364,10 @@ body {
 }
 
 .market .product-card {
+  margin-bottom: 100px;
+
   background-color: transparent;
   border: none;
-  margin-bottom: 100px;
 }
 
 .product-card .product-img {
@@ -339,9 +375,10 @@ body {
 }
 
 .product-card .product-title {
-  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
-  font-size: 30px;
   margin-bottom: 30px;
+
+  font-size: 30px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
 }
 
 .product-card .card-body {
@@ -350,55 +387,113 @@ body {
 }
 
 .product-card .product-caption {
+  margin-bottom: 15px;
+
   font-weight: 700;
   font-size: 24px;
   color: #686868;
-  margin-bottom: 15px;
 }
 
 .product-card .product-price {
+  margin-bottom: 15px;
+
+  font-size: 30px;
   font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
-  font-size: 30px;
-  margin-bottom: 15px;
 }
 
 .product-card .add-to-card-link {
+  font-size: 28px;
   font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
-  font-size: 28px;
   text-decoration: underline;
 }
 
-.blog .post-card {
+.blog .post-card,
+.news .news-card {
   border: none;
 }
 
-.post-card .card-body {
+.post-card .card-body,
+.news-card .card-body {
   padding: 0;
   padding-top: 50px;
 }
 
-.post-card .post-img {
+.post-card .post-img,
+.news-card .news-img {
   width: 75%;
 }
 
-.post-card .post-title {
-  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
-  font-size: 24px;
+.post-card .post-title,
+.news-card .news-title {
   margin-bottom: 30px;
+
+  font-size: 24px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
 }
 
-.post-card .post-caption {
+.post-card .post-caption,
+.news-card .news-caption {
+  margin-bottom: 40px;
+
   font-weight: 700;
   font-size: 22px;
   color: #6e6e6e;
-  margin-bottom: 40px;
 }
 
-.post-card .read-more-link {
+.post-card .read-more-link,
+.news-card .read-more-link {
+  font-size: 24px;
   font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
-  font-size: 24px;
   text-decoration: underline;
+}
+
+.portfolio {
+  background-color: #fcfcfc;
+}
+
+.portfolio-image {
+  position: relative;
+}
+
+.portfolio .see-all-link {
+  position: absolute;
+  right: 80px;
+  bottom: 60px;
+
+  color: #d7d7d6;
+  text-transform: none;
+
+  border-color: #d7d7d6;
+}
+
+.subscribe-form .form-title {
+  margin-bottom: 70px;
+
+  font-size: 30px;
+  line-height: 50px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+  text-transform: uppercase;
+}
+
+.subscribe-form .email-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 70px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #888888;
+
+  border: none;
+}
+
+.subscribe-form .email-input:placeholder-shown {
+  color: #888888;
+  text-transform: capitalize;
 }
