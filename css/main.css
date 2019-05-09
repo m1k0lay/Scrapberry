@@ -143,6 +143,10 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+.highlighted-text {
+  color: #e5111b;
+}
+
 /* глобальные свойства для шрифтов */
 body {
   font-weight: 400;
@@ -233,9 +237,8 @@ body {
   background-image: url("../img/shopping-cart.svg");
 }
 
-.slide-1,
-.slide-2,
-.slide-3 {
+/* TODO: переделать */
+.promo-slider [class*="slide-"] {
   min-height: 775px;
 
   background-repeat: no-repeat;
@@ -243,19 +246,19 @@ body {
   background-size: cover;
 }
 
-.slide-1 {
+.promo-slider .slide-1 {
   background-image: url("../img/slide-1.jpg");
 }
 
-.slide-2 {
+.promo-slider .slide-2 {
   background-image: url("../img/slide-2.jpg");
 }
 
-.slide-3 {
+.promo-slider .slide-3 {
   background-image: url("../img/slide-3.jpg");
 }
 
-.slide-caption {
+.promo-slider .slide-caption {
   color: #ffffff;
 }
 
@@ -496,4 +499,144 @@ body {
 .subscribe-form .email-input:placeholder-shown {
   color: #888888;
   text-transform: capitalize;
+}
+
+.reviews {
+  background-color: #fdfdfd;
+}
+
+.reviews .section-header {
+  margin-bottom: 30px;
+}
+
+.reviews-slider .review-card {
+  background-color: transparent;
+  border: none;
+}
+
+.review-card .col-xxl-3 {
+  padding-top: 70px;
+}
+
+.review-card .review-img {
+  margin-bottom: 50px;
+
+  border-radius: 50%;
+}
+
+.review-card .review-author {
+  margin-bottom: 0;
+
+  font-size: 24px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+  text-align: center;
+  color: #e3000b;
+}
+
+.review-card .card-body {
+  padding: 0;
+}
+
+.review-card .review-text {
+  margin-bottom: 25px;
+  padding-right: 50px;
+  padding-left: 75px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+}
+
+.review-card .card-body::before {
+  content: "";
+  position: relative;
+
+  display: block;
+  width: 100px;
+  height: 90px;
+  margin-bottom: 25px;
+  margin-left: auto;
+
+  background-image: url("../img/closing-quote.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.review-card .card-body::after {
+  content: "";
+  position: relative;
+
+  display: block;
+  width: 100px;
+  height: 90px;
+
+  background-image: url("../img/opening-quote.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.review-card .leave-feedback-link {
+  font-size: 24px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+  color: #e3000b;
+  text-decoration: underline;
+  position: absolute;
+  margin-left: 75px;
+  margin-top: 25px;
+  z-index: 1;
+}
+
+.social .section-header {
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.social .social-links {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 0 100%;
+  justify-content: space-between;
+}
+
+.social .social-link {
+  font-size: 24px;
+  font-weight: 500;
+  color: #111111;
+  padding-top: 170px;
+  position: relative;
+  min-width: 135px;
+  text-align: center;
+}
+
+.social .social-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 135px;
+  border: 4px solid #e72a33;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.social .facebook::before {
+  background-image: url("../img/logo-facebook.svg");
+}
+
+.social .instagram::before {
+  background-image: url("../img/logo-instagram.svg");
+}
+
+.social .vkontakte::before {
+  background-image: url("../img/logo-vkontakte.svg");
+}
+
+.social .telegram::before {
+  background-image: url("../img/logo-telegram.svg");
+}
+
+.social .youtube::before {
+  background-image: url("../img/logo-youtube.svg");
 }
