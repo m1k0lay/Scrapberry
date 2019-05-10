@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <title>Scrapberry</title>
+  <title>Scrapberry - интернет-магазин канцеллярской продукции</title>
 </head>
 <body>
-  <header>
+  <header class="main-header">
     <div class="container">
       <div class="row align-items-center justify-content-center header-top">
         <div class="col-xxl-3">
@@ -94,11 +93,7 @@
 
     <section class="front-page-section our-products">
       <div class="container">
-        <div class="row">
-          <div class="col-xxl-12">
-            <h2 class="section-header">Наши продукты</h2>
-          </div>
-        </div>
+        <h2 class="section-header">Наши продукты</h2>
         <div class="row">
           <div class="col-xxl-3">
             <article class="product-category diaries">
@@ -134,11 +129,7 @@
 
     <section class="front-page-section market">
       <div class="container">
-        <div class="row">
-          <div class="col-xxl-12">
-            <h2 class="section-header">Магазин</h2>
-          </div>
-        </div>
+        <h2 class="section-header">Магазин</h2>
         <div class="row">
           <div class="col-xxl-6">
             <div class="card product-card">
@@ -248,12 +239,8 @@
 
     <section class="front-page-section blog">
         <div class="container">
-          <div class="row">
-            <div class="col-xxl-12">
-              <h2 class="section-header">Блог</h2>
-            </div>
-          </div>
-          <div class="row">
+          <h2 class="section-header">Блог</h2>
+          <div class="row justify-content-between">
             <div class="col-xxl-3">
               <div class="card post-card">
                 <img src="img/blog-1.jpg" class="card-img-top post-img" alt="...">
@@ -300,11 +287,7 @@
 
       <section class="front-page-section portfolio">
         <div class="container">
-          <div class="row">
-            <div class="col-xxl-12">
-              <h2 class="section-header">Портфолио</h2>
-            </div>
-          </div>
+          <h2 class="section-header">Портфолио</h2>
           <div class="row">
             <div class="col-xxl-12">
               <img class="portfolio-image" src="img/portfolio-1.jpg" alt="...">
@@ -316,11 +299,7 @@
 
     <section class="front-page-section news">
       <div class="container">
-        <div class="row">
-          <div class="col-xxl-12">
-            <h2 class="section-header">Новости</h2>
-          </div>
-        </div>
+        <h2 class="section-header">Новости</h2>
         <div class="row">
           <div class="col-xxl-3">
             <div class="card news-card">
@@ -365,11 +344,7 @@
 
     <section class="front-page-section reviews">
       <div class="container">
-        <div class="row">
-          <div class="col-xxl-12">
-            <h2 class="section-header">Отзывы</h2>
-          </div>
-        </div>
+        <h2 class="section-header">Отзывы</h2>
         <div class="row">
           <div class="col-xxl-12">
             <div id="reviews-slider" class="reviews-slider carousel slide" data-ride="carousel">
@@ -378,8 +353,10 @@
                   <div class="card review-card">
                     <div class="row">
                       <div class="col-xxl-3">
-                        <img class="review-img" src="img/blog-1.jpg" class="card-img" alt="...">
-                        <h5 class="review-author">Анна Александровна</h5>
+                        <div class="author-wrapper">
+                          <img class="review-img" src="img/blog-1.jpg" class="card-img" alt="...">
+                          <h5 class="review-author">Анна Александровна</h5>
+                        </div>
                       </div>
                       <div class="col-xxl-9">
                         <div class="card-body">
@@ -394,8 +371,10 @@
                   <div class="card review-card">
                     <div class="row">
                       <div class="col-xxl-3">
-                        <img class="review-img" src="img/blog-1.jpg" class="card-img" alt="...">
-                        <h5 class="review-author">Ольга Владимировна</h5>
+                        <div class="author-wrapper">
+                          <img class="review-img" src="img/blog-1.jpg" class="card-img" alt="...">
+                          <h5 class="review-author">Ольга Владимировна</h5>
+                        </div>
                       </div>
                       <div class="col-xxl-9">
                         <div class="card-body">
@@ -410,8 +389,10 @@
                   <div class="card review-card">
                     <div class="row">
                       <div class="col-xxl-3">
-                        <img class="review-img" src="img/blog-1.jpg" class="card-img" alt="...">
-                        <h5 class="review-author">Елизавета Михайловна</h5>
+                        <div class="author-wrapper">
+                          <img class="review-img" src="img/blog-1.jpg" class="card-img" alt="...">
+                          <h5 class="review-author">Елизавета Михайловна</h5>
+                        </div>
                       </div>
                       <div class="col-xxl-9">
                         <div class="card-body">
@@ -433,11 +414,7 @@
   <footer class="main-footer">
     <section class="front-page-section social">
       <div class="container">
-        <div class="row">
-          <div class="col-xxl-12">
-            <h2 class="section-header">Следуй за нами в <span class="highlighted-text">социальные сети</span></h2>
-          </div>
-        </div>
+        <h2 class="section-header">Следуй за нами в <span class="highlighted-text">социальные сети</span></h2>
         <div class="row">
           <div class="col-xxl-12">
             <div class="social-links-wrapper">

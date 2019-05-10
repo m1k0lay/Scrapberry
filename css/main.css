@@ -288,6 +288,10 @@ body {
   padding-bottom: 60px;
 }
 
+.front-page-section > .container > .row > [class*="col-xxl-"] {
+  margin-bottom: 60px;
+}
+
 .section-header {
   margin-top: 0;
   margin-bottom: 100px;
@@ -295,6 +299,30 @@ body {
   font-size: 43px;
   font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   text-align: center;
+}
+
+
+.our-products .product-category {
+  padding-top: 275px;
+
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.our-products .diaries {
+  background-image: url("../img/diaries.svg");
+}
+
+.our-products .document-covers {
+  background-image: url("../img/document-covers.svg");
+}
+
+.our-products .diplomas {
+  background-image: url("../img/diplomas.svg");
+}
+
+.our-products .bags {
+  background-image: url("../img/bags.svg");
 }
 
 .product-category .header {
@@ -343,41 +371,18 @@ body {
   text-decoration: underline;
 }
 
-.our-products .diaries,
-.our-products .document-covers,
-.our-products .diplomas,
-.our-products .bags {
-  padding-top: 275px;
-
-  background-image: url("../img/diaries.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
-.our-products .document-covers {
-  background-image: url("../img/document-covers.svg");
-}
-
-.our-products .diplomas {
-  background-image: url("../img/diplomas.svg");
-}
-
-.our-products .bags {
-  background-image: url("../img/bags.svg");
-}
-
-.market {
+.front-page .market {
   background-color: #f1f1f1;
 }
 
 .market .product-card {
-  margin-bottom: 100px;
-
   background-color: transparent;
   border: none;
 }
 
 .product-card .product-img {
+  max-width: 250px;
+
   border-radius: 50%;
 }
 
@@ -430,6 +435,7 @@ body {
 .post-card .post-img,
 .news-card .news-img {
   width: 75%;
+  max-width: 500px;
 }
 
 .post-card .post-title,
@@ -457,11 +463,11 @@ body {
   text-decoration: underline;
 }
 
-.portfolio {
+.front-page .portfolio {
   background-color: #fcfcfc;
 }
 
-.portfolio-image {
+.portfolio .portfolio-image {
   position: relative;
 }
 
@@ -487,7 +493,6 @@ body {
 
 .subscribe-form .email-input {
   display: block;
-  width: 100%;
   margin-bottom: 70px;
   padding-right: 15px;
   padding-left: 15px;
@@ -518,11 +523,14 @@ body {
   border: none;
 }
 
-.review-card .col-xxl-3 {
+.review-card .author-wrapper {
   padding-top: 70px;
+
+  text-align: center;
 }
 
 .review-card .review-img {
+  max-width: 500px;
   margin-bottom: 50px;
 
   border-radius: 50%;
@@ -580,14 +588,16 @@ body {
 }
 
 .review-card .leave-feedback-link {
+  position: absolute;
+  z-index: 1;
+
+  margin-top: 25px;
+  margin-left: 75px;
+
   font-size: 24px;
   font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
   text-decoration: underline;
-  position: absolute;
-  margin-left: 75px;
-  margin-top: 25px;
-  z-index: 1;
 }
 
 .social .section-header {
@@ -595,24 +605,30 @@ body {
   font-family: inherit;
 }
 
+.social > .container > .row > [class*="col-xxl-"] {
+  margin-bottom: 0;
+}
+
 .social .social-links-wrapper {
   display: flex;
-  flex-flow: row wrap;
   flex: 1 0 100%;
+  flex-flow: row wrap;
   justify-content: center;
   margin-left: -100px;
 }
 
 .social .social-link {
-  font-size: 24px;
-  font-weight: 500;
-  color: #111111;
-  padding-top: 170px;
   position: relative;
+
   min-width: 135px;
-  text-align: center;
-  margin-left: 100px;
   margin-bottom: 60px;
+  margin-left: 100px;
+  padding-top: 170px;
+
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #111111;
 }
 
 .social .social-link::before {
@@ -620,12 +636,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+
   width: 135px;
   height: 135px;
-  border: 4px solid #e72a33;
-  border-radius: 50%;
+
   background-repeat: no-repeat;
   background-position: center center;
+  border: 4px solid #e72a33;
+  border-radius: 50%;
 }
 
 .social .facebook::before {
@@ -653,11 +671,11 @@ body {
 }
 
 .main-footer .footer-links-wrapper {
-  min-height: 250px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  min-height: 250px;
 }
 
 .main-footer .personal-data-link {
