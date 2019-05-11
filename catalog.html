@@ -17,7 +17,7 @@
         <div class="col-xxl-4">
           <nav class="main-navigation">
             <ul class="site-navigation">
-              <li><a href="#">Продукты</a></li>
+              <li><a href="#">товары</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Магазин</a></li>
               <li><a href="#">Портфолио</a></li>
@@ -45,50 +45,54 @@
     </div>
   </header>
 
-  <main class="catalog-page">
+  <main class="main-catalog-page">
     <div class="container">
-      <h1 class="page-header">Магазин</h1>
-      <div class="row justify-content-between">
-        <div class="col-xxl-3">
-          <div class="dropdown catalog-navigation">
-            <button class="btn dropdown-navigation-btn" type="button" id="dropdown-navigation-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Каталог товаров
-            </button>
-            <div class="dropdown-menu navigation-menu" aria-labelledby="dropdown-navigation-btn">
-              <a class="dropdown-item menu-item" href="#">Ежедневники</a>
-              <a class="dropdown-item menu-item" href="#">Блокноты</a>
-              <a class="dropdown-item menu-item" href="#">Обложки на документы</a>
-              <a class="dropdown-item menu-item" href="#">Дипломы</a>
-              <a class="dropdown-item menu-item" href="#">Наградная продукция</a>
-              <a class="dropdown-item menu-item" href="#">Сумки</a>
-              <a class="dropdown-item menu-item" href="#">Обложки на книги</a>
-              <a class="dropdown-item menu-item" href="#">Папки</a>
-              <a class="dropdown-item menu-item" href="#">Портмоне</a>
-              <a class="dropdown-item menu-item" href="#">Подарочные наборы</a>
+      <header class="page-header">
+        <h1 class="header">Магазин</h1>
+        <div class="row justify-content-between">
+          <div class="col-xxl-3">
+            <div class="dropdown catalog-navigation show">
+              <button class="btn dropdown-navigation-btn" disabled type="button" id="dropdown-navigation-btn" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Каталог товаров
+              </button>
+              <div class="dropdown-menu navigation-menu show" aria-labelledby="dropdown-navigation-btn">
+                <a class="dropdown-item menu-item" href="#">Ежедневники</a>
+                <a class="dropdown-item menu-item" href="#">Блокноты</a>
+                <a class="dropdown-item menu-item" href="#">Обложки на документы</a>
+                <a class="dropdown-item menu-item" href="#">Дипломы</a>
+                <a class="dropdown-item menu-item" href="#">Наградная продукция</a>
+                <a class="dropdown-item menu-item" href="#">Сумки</a>
+                <a class="dropdown-item menu-item" href="#">Обложки на книги</a>
+                <a class="dropdown-item menu-item" href="#">Папки</a>
+                <a class="dropdown-item menu-item" href="#">Портмоне</a>
+                <a class="dropdown-item menu-item" href="#">Подарочные наборы</a>
+              </div>
             </div>
           </div>
+          <div class="col-xxl-9">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+              <input class="search-input" type="text" placeholder="Введите название товара">
+              <button class="search-button" type="submit">Найти</button>
+            </form>
+          </div>
         </div>
-        <div class="col-xxl-8">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
-            <input class="search-input" type="text" placeholder="Введите название товара">
-            <button class="search-button" type="submit">Найти</button>
-          </form>
-        </div>
-      </div>
+      </header>
+
       <div class="row justify-content-end">
         <div class="col-xxl-9">
           <div class="row">
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 product-card-wrapper product-card-wrapper">
               <div class="card product-card">
                 <div class="row no-gutters">
                   <div class="col-4">
-                    <img src="img/product-1.jpg" class="card-img product-img" alt="...">
+                    <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                   </div>
                   <div class="col-8">
                     <div class="card-body">
                       <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                       <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>
                       <p class="product-price">4500 руб</p>
+                      <a class="view-product-link" href="#">Посмотреть товар</a>
                       <a class="add-to-card-link" href="#">Добавить в корзину</a>
                     </div>
                   </div>
@@ -96,17 +100,18 @@
               </div>
             </div>
 
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 product-card-wrapper">
               <div class="card product-card">
                 <div class="row no-gutters">
                   <div class="col-4">
-                    <img src="img/product-1.jpg" class="card-img product-img" alt="...">
+                    <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                   </div>
                   <div class="col-8">
                     <div class="card-body">
                       <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                       <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>
                       <p class="product-price">4500 руб</p>
+                      <a class="view-product-link" href="#">Посмотреть товар</a>
                       <a class="add-to-card-link" href="#">Добавить в корзину</a>
                     </div>
                   </div>
@@ -114,17 +119,18 @@
               </div>
             </div>
 
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 product-card-wrapper">
               <div class="card product-card">
                 <div class="row no-gutters">
                   <div class="col-4">
-                    <img src="img/product-1.jpg" class="card-img product-img" alt="...">
+                    <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                   </div>
                   <div class="col-8">
                     <div class="card-body">
                       <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                       <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>
                       <p class="product-price">4500 руб</p>
+                      <a class="view-product-link" href="#">Посмотреть товар</a>
                       <a class="add-to-card-link" href="#">Добавить в корзину</a>
                     </div>
                   </div>
@@ -132,17 +138,18 @@
               </div>
             </div>
 
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 product-card-wrapper">
               <div class="card product-card">
                 <div class="row no-gutters">
                   <div class="col-4">
-                    <img src="img/product-1.jpg" class="card-img product-img" alt="...">
+                    <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                   </div>
                   <div class="col-8">
                     <div class="card-body">
                       <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                       <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>
                       <p class="product-price">4500 руб</p>
+                      <a class="view-product-link" href="#">Посмотреть товар</a>
                       <a class="add-to-card-link" href="#">Добавить в корзину</a>
                     </div>
                   </div>
@@ -150,17 +157,18 @@
               </div>
             </div>
 
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 product-card-wrapper">
               <div class="card product-card">
                 <div class="row no-gutters">
                   <div class="col-4">
-                    <img src="img/product-1.jpg" class="card-img product-img" alt="...">
+                    <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                   </div>
                   <div class="col-8">
                     <div class="card-body">
                       <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                       <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>
                       <p class="product-price">4500 руб</p>
+                      <a class="view-product-link" href="#">Посмотреть товар</a>
                       <a class="add-to-card-link" href="#">Добавить в корзину</a>
                     </div>
                   </div>
@@ -168,17 +176,18 @@
               </div>
             </div>
 
-            <div class="col-xxl-6">
+            <div class="col-xxl-6 product-card-wrapper">
               <div class="card product-card">
                 <div class="row no-gutters">
                   <div class="col-4">
-                    <img src="img/product-1.jpg" class="card-img product-img" alt="...">
+                    <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                   </div>
                   <div class="col-8">
                     <div class="card-body">
                       <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                       <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>
                       <p class="product-price">4500 руб</p>
+                      <a class="view-product-link" href="#">Посмотреть товар</a>
                       <a class="add-to-card-link" href="#">Добавить в корзину</a>
                     </div>
                   </div>

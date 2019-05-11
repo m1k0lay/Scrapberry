@@ -67,6 +67,16 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-footer {
+  margin-top: auto;
+}
+
 *,
 *::before,
 *::after {
@@ -285,7 +295,7 @@ body {
   font-size: 24px;
 }
 
-.page-header {
+.page-header .header {
   margin-bottom: 120px;
 
   font-size: 36px;
@@ -694,8 +704,12 @@ body {
 
 /* catalog.html */
 
-.catalog-page {
+.main-catalog-page {
   padding-top: 110px;
+}
+
+.main-catalog-page .page-header {
+  margin-bottom: 150px;
 }
 
 .catalog-navigation .dropdown-navigation-btn {
@@ -712,6 +726,10 @@ body {
   border-radius: 0;
   padding: 12px 70px 12px 15px;
   white-space: nowrap;
+}
+
+.catalog-navigation .dropdown-navigation-btn:disabled {
+  opacity: 1;
 }
 
 .catalog-navigation .dropdown-navigation-btn::after {
@@ -759,7 +777,7 @@ body {
   background-color: #f3f3f3;
 }
 
-.catalog-page .search-form {
+.main-catalog-page .search-form {
   display: flex;
 }
 
@@ -778,7 +796,7 @@ body {
   color: #787878;
 }
 
-.search-form::before {
+.main-catalog-page .search-form::before {
   content: "";
   position: absolute;
   width: 31px;
@@ -790,7 +808,6 @@ body {
   margin-left: 15px;
 }
 
-
 .search-form .search-button {
   min-width: 200px;
   font-weight: 700;
@@ -801,4 +818,67 @@ body {
 
   background-color: #e3000b;
   border: none;
+}
+
+.main-catalog-page .order-link {
+  font-size: 24px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+  color: #e3000b;
+  text-decoration: underline;
+}
+
+.main-catalog-page .product-card {
+  background-color: transparent;
+  border: none;
+}
+
+.main-catalog-page .product-card .product-img {
+  max-width: 200px;
+
+  border-radius: 50%;
+}
+
+.main-catalog-page .product-card .product-title {
+  margin-bottom: 20px;
+
+  font-size: 22px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+}
+
+.main-catalog-page .product-card .card-body {
+  padding: 0;
+  padding-left: 30px;
+}
+
+.main-catalog-page .product-card .product-caption {
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 20px;
+  color: #686868;
+}
+
+.main-catalog-page .product-card .product-price {
+  margin-bottom: 15px;
+
+  font-size: 22px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+  color: #e3000b;
+}
+
+.main-catalog-page .product-card .add-to-card-link,
+.main-catalog-page .product-card .view-product-link {
+  display: block;
+  font-size: 22px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+  color: #e3000b;
+  text-decoration: underline;
+}
+
+.main-catalog-page .product-card .add-to-card-link {
+  margin-bottom: 15px;
+}
+
+.main-catalog-page .product-card-wrapper {
+  margin-bottom: 160px;
 }
