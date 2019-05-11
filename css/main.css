@@ -157,16 +157,16 @@ body {
   font-family: "Gotham Pro", "Arial", sans-serif;
 }
 
-.header-top {
+.main-header .header-top {
   min-height: 120px;
 }
 
-.header-top .logo {
+.main-header .logo {
   width: 271px;
   height: 43px;
 }
 
-.site-navigation {
+.main-header .site-navigation {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -175,21 +175,20 @@ body {
   list-style: none;
 }
 
-.site-navigation a {
+.main-header .site-navigation a {
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
   color: #111111;
 }
 
-.site-navigation a:hover {
+.main-header .site-navigation a:hover {
   color: #830009;
 }
 
-
-.header-top .call-us,
-.header-top .mail-us,
-.header-top .cart {
+.main-header .call-us,
+.main-header .mail-us,
+.main-header .cart {
   margin: 0;
   padding-left: 45px;
 
@@ -197,33 +196,37 @@ body {
   font-size: 12px;
 }
 
-.call-us dd,
-.mail-us dd,
-.cart dd {
+.main-header .call-us dd,
+.main-header .mail-us dd,
+.main-header .cart dd {
   margin: 0;
 }
 
-.call-us dd a,
-.mail-us dd a,
-.cart .total-price {
+.main-header .request-call-link,
+.main-header .write-letter-link,
+.main-header .total-price {
   color: #e3000b;
   text-decoration: underline;
 }
 
-.header-top .call-us::before,
-.header-top .mail-us::before,
-.header-top .cart::before {
+.main-header .call-us::before,
+.main-header .mail-us::before,
+.main-header .cart::before {
   content: "";
   position: absolute;
 
-  width: 30px;
-  height: 30px;
   margin-top: 5px;
   margin-left: -45px;
 
-  background-image: url("../img/phone-call.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.main-header .call-us::before {
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/phone-call.svg");
 }
 
 .header-top .mail-us::before {
@@ -241,7 +244,6 @@ body {
   background-image: url("../img/shopping-cart.svg");
 }
 
-/* TODO: переделать */
 .promo-slider [class*="slide-"] {
   min-height: 775px;
 
@@ -283,6 +285,14 @@ body {
   font-size: 24px;
 }
 
+.page-header {
+  margin-bottom: 120px;
+
+  font-size: 36px;
+  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
+  text-align: center;
+}
+
 .front-page-section {
   padding-top: 80px;
   padding-bottom: 60px;
@@ -300,7 +310,6 @@ body {
   font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   text-align: center;
 }
-
 
 .our-products .product-category {
   padding-top: 275px;
@@ -681,4 +690,115 @@ body {
 .main-footer .personal-data-link {
   color: #111111;
   text-decoration: none;
+}
+
+/* catalog.html */
+
+.catalog-page {
+  padding-top: 110px;
+}
+
+.catalog-navigation .dropdown-navigation-btn {
+  width: 100%;
+  position: relative;
+
+  font-size: 24px;
+  line-height: 34px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+  text-align: initial;
+  color: #ffffff;
+
+  background-color: #e3000b;
+  border-radius: 0;
+  padding: 12px 70px 12px 15px;
+  white-space: nowrap;
+}
+
+.catalog-navigation .dropdown-navigation-btn::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog-navigation .navigation-menu {
+  font-size: 22px;
+  line-height: 28px;
+  border-radius: 0;
+  border: none;
+}
+
+.catalog-navigation .menu-item {
+  font-weight: 700;
+  padding: 20px 60px 10px 20px;
+  position: relative;
+}
+
+.catalog-navigation .menu-item:not(:first-child) {
+  border-top: 1px solid #f3f3f3;
+}
+
+.catalog-navigation .menu-item::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon-menu-item.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog-navigation .menu-item:hover {
+  background-color: #f3f3f3;
+}
+
+.catalog-page .search-form {
+  display: flex;
+}
+
+.search-form .search-input {
+  flex: 1 1 100%;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #787878;
+  padding: 16px 30px 16px 75px;
+  border: none;
+  overflow: hidden;
+}
+
+.search-form .search-input:placeholder-shown {
+  color: #787878;
+}
+
+.search-form::before {
+  content: "";
+  position: absolute;
+  width: 31px;
+  height: 29px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+
+.search-form .search-button {
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 12px 15px;
+  color: #ffffff;
+
+  background-color: #e3000b;
+  border: none;
 }
