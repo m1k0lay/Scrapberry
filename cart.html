@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Scrapberry - Ежедневники</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="row align-items-center justify-content-center header-top">
+        <div class="col-xxl-3">
+          <a href="#"><img class="logo" src="img/logo.png" alt="Логотип магазина Scrapberry" width="271" height="43"></a>
+        </div>
+        <div class="col-xxl-4">
+          <nav class="main-navigation">
+            <ul class="site-navigation">
+              <li><a href="#">Продукты</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Магазин</a></li>
+              <li><a href="#">Портфолио</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-xxl-5 d-flex justify-content-between">
+          <dl class="call-us">
+            <dt><b>+7 916 245 20 20</b></dt>
+            <dd><a class="request-call-link" href="#">Заказать звонок</a></dd>
+          </dl>
+          <dl class="mail-us">
+            <dt><b>support@scrapberry.com</b></dt>
+            <dd><a class="write-letter-link" href="mailto:support@scrapberry.com">Написать письмо</a></dd>
+          </dl>
+          <dl class="cart">
+            <dt><b>Корзина</b></dt>
+            <dd>
+              <span class="cart-amount">2 товара</span>
+              <span class="total-price">345 руб.</span>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="cart-page">
+      <header class="page-header">
+        <h1 class="visually-hidden header">Корзина товаров</h1>
+      </header>
+    <div class="container">
+      <div class="table-responsive-md">
+        <table class="table table-striped cart-table">
+          <thead>
+            <tr>
+              <th class="product">Товар</th>
+              <th class="color">Цвет</th>
+              <th class="count">Количество</th>
+              <th class="amount">Итого</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="product-data"><img class="product-img" src="img/product-7.png" alt=""><span class="product-name">Ежедневник</span></td>
+              <td class="product-color">Цвет: синий</td>
+              <td><input class="product-count" type="number" name="product-count" value="1" min="1"></td>
+              <td class="product-price">15000 руб</td>
+            </tr>
+            <tr>
+              <td class="product-data"><img class="product-img" src="img/product-7.png" alt=""><span class="product-name">Ежедневник</span></td>
+              <td class="product-color">Цвет: белый</td>
+              <td><input class="product-count" type="number" name="product-count" value="1" min="1"></td>
+              <td class="product-price">15000 руб</td>
+            </tr>
+            <tr>
+              <td class="product-data"><img class="product-img" src="img/product-7.png" alt=""><span class="product-name">Ежедневник</span></td>
+              <td class="product-color">Цвет: черный</td>
+              <td><input class="product-count" type="number" name="product-count" value="1" min="1"></td>
+              <td class="product-price">15000 руб</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="table-footer" colspan="4">
+                <span class="total-amount">Итоговая сумма: <span class="number">45000 руб</span></span>
+                <a class="button continue-shopping-link rounded-pill" href="#">Продолжить покупку</a>
+                <a class="button checkout-link rounded-pill" href="#">Оформить заказ</a>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <section class="front-page-section social">
+      <div class="container">
+        <h2 class="section-header">Следуй за нами в <span class="highlighted-text">социальные сети</span></h2>
+        <div class="row">
+          <div class="col-xxl-12">
+            <div class="social-links-wrapper">
+              <a class="social-link facebook" href="#">Facebook</a>
+              <a class="social-link instagram" href="#">Instagram</a>
+              <a class="social-link vkontakte" href="#">Vkontakte</a>
+              <a class="social-link telegram" href="#">Telegram</a>
+              <a class="social-link youtube" href="#">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-12">
+              <div class="footer-links-wrapper">
+                <a class="link personal-data-link" href="#">Закон о персональных данных</a>
+                <a class="link" href="#">Написать письмо</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
