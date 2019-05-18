@@ -127,6 +127,13 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }
 
+.clearfix::after {
+  content: "";
+
+  display: block;
+  clear: both;
+}
+
 .button {
   display: inline-block;
   padding: 18px 46px;
@@ -350,7 +357,10 @@ body {
 .catalog-page main,
 .product-page main,
 .blog-page main,
-.news-page main { /* TODO: в общие стили? */
+.news-page main,
+.about-page main,
+.portfolio-page main {
+  /* TODO: переделать */
   padding-top: 110px;
 }
 
@@ -398,7 +408,8 @@ body {
   font-size: 24px;
 }
 
-.page-header .header { /* TODO: общие заголовки для всех страниц? */
+.page-header .header {
+  /* TODO: общие заголовки для всех страниц? */
   margin-bottom: 110px;
 
   font-size: 36px;
@@ -420,7 +431,8 @@ body {
   padding-bottom: 60px;
 }
 
-.front-page-section > .container > .row > [class*="col-xxl-"] { /* TODO: изменить селектор? */
+.front-page-section > .container > .row > [class*="col-xxl-"] {
+  /* TODO: изменить селектор? */
   margin-bottom: 60px;
 }
 
@@ -898,8 +910,8 @@ body {
   color: #e3000b;
 }
 
-.catalog-page .product-card .add-to-card-link,
-.catalog-page .product-card .view-product-link {
+.catalog-page .product-card .view-product-link,
+.catalog-page .product-card .add-to-card-link {
   display: block;
 
   font-size: 22px;
@@ -908,7 +920,7 @@ body {
   text-decoration: underline;
 }
 
-.catalog-page .product-card .add-to-card-link {
+.catalog-page .product-card .view-product-link {
   margin-bottom: 15px;
 }
 
@@ -1105,8 +1117,8 @@ body {
   color: #e3000b;
 }
 
-.product-page .product-card .add-to-card-link,
-.product-page .product-card .view-product-link {
+.product-page .product-card .view-product-link,
+.product-page .product-card .add-to-card-link {
   display: block;
 
   font-size: 22px;
@@ -1115,7 +1127,7 @@ body {
   text-decoration: underline;
 }
 
-.product-page .product-card .add-to-card-link {
+.product-page .product-card .view-product-link {
   margin-bottom: 15px;
 }
 
@@ -1142,9 +1154,10 @@ body {
 
 .cart-page .cart-table th,
 .cart-page .cart-table td {
-  border: 2px solid #e5e5e5;
-  text-align: center;
   vertical-align: middle;
+  text-align: center;
+
+  border: 2px solid #e5e5e5;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
@@ -1162,11 +1175,12 @@ body {
 }
 
 .cart-page .cart-table .product-data {
-  text-align: left;
   padding: 50px 25px;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+  text-align: left;
 }
 
 .cart-page .cart-table .product-img {
@@ -1185,20 +1199,24 @@ body {
 }
 
 .cart-page .cart-table .product-count {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 32px;
-  border: 2px solid #e5e5e5;
-  text-align: center;
   width: 90px;
   padding: 12px;
+
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Roboto", "Arial", sans-serif;
+  text-align: center;
+
+  border: 2px solid #e5e5e5;
+
   -moz-appearance: textfield;
 }
 
 .cart-page .cart-table .product-count::-webkit-outer-spin-button,
 .cart-page .cart-table .product-count::-webkit-inner-spin-button {
-  -webkit-appearance: none;
   margin: 0;
+
+  -webkit-appearance: none;
 }
 
 .cart-page .cart-table .product-count:hover,
@@ -1214,14 +1232,16 @@ body {
 
 .cart-page .cart-table .table-footer {
   height: 100px;
+
   text-align: right;
 }
 
 .cart-page .cart-table .total-amount {
   display: inline-block;
+  margin: 10px;
+
   font-weight: 500;
   font-size: 32px;
-  margin: 10px;
 }
 
 .cart-page .total-amount .number {
@@ -1230,30 +1250,35 @@ body {
 }
 
 .cart-page .cart-table .continue-shopping-link {
-  text-transform: none;
-  color: black;
-  border: 2px solid #111111;
+  margin: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 10px;
+
+  color: black;
+  text-transform: none;
+
+  border: 2px solid #111111;
 }
 
 .cart-page .cart-table .checkout-link {
-  text-transform: none;
-  background-color: #e3000b;
-  border: none;
+  margin: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 10px;
+
+  text-transform: none;
+
+  background-color: #e3000b;
+  border: none;
 }
 /* cart.html ends */
 
 /* blog.html */
 .blog-page .post-card {
-  border: none;
-  background-color: #fffefd;
   padding-top: 90px;
   padding-bottom: 90px;
+
+  background-color: #fffefd;
+  border: none;
 }
 
 .blog-page .post-card:not(:last-child) {
@@ -1261,24 +1286,21 @@ body {
 }
 
 .blog-page .post-title {
-  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
-  font-size: 43px;
   margin-bottom: 50px;
+
+  font-size: 43px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
 }
 
 .blog-page .post-caption,
 .blog-page .post-date {
-  font-size: 24px;
   font-weight: 700;
+  font-size: 24px;
   line-height: 32px;
 }
 
 .blog-page .post-caption {
   margin-bottom: 50px;
-}
-
-.blog-page .post-date {
-  margin-bottom: 0;
 }
 
 .blog-page .post-bottom {
@@ -1289,10 +1311,11 @@ body {
 
 /* news.html */
 .news-page .news-card {
-  border: none;
-  background-color: #fffefd;
   padding-top: 90px;
   padding-bottom: 90px;
+
+  background-color: #fffefd;
+  border: none;
 }
 
 .news-page .news-card:not(:last-child) {
@@ -1300,24 +1323,21 @@ body {
 }
 
 .news-page .news-title {
-  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
-  font-size: 43px;
   margin-bottom: 50px;
+
+  font-size: 43px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
 }
 
 .news-page .news-caption,
 .news-page .news-date {
-  font-size: 24px;
   font-weight: 700;
+  font-size: 24px;
   line-height: 32px;
 }
 
 .news-page .news-caption {
   margin-bottom: 50px;
-}
-
-.news-page .news-date {
-  margin-bottom: 0;
 }
 
 .news-page .news-bottom {
@@ -1326,3 +1346,46 @@ body {
 }
 /* news.html ends */
 
+/* about-us.html */
+.about-page .about-card {
+  border: none;
+}
+
+.about-page .about-card:not(:last-child) {
+  margin-bottom: 100px;
+}
+
+.about-page .about-caption {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+}
+/* about-us.html ens */
+
+/* portfolio.html */
+.portfolio-page .portfolio-card {
+  border: none;
+}
+
+.portfolio-page .portfolio-card:not(:last-child) {
+  margin-bottom: 100px;
+}
+
+.portfolio-page .portfolio-title {
+  margin-bottom: 50px;
+
+  font-size: 42px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+}
+
+.portfolio-page .portfolio-caption {
+  margin-bottom: 50px;
+
+  font-size: 24px;
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+}
+
+.portfolio-page .return-link {
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+}
+/* portfolio.html ends*/
