@@ -346,6 +346,14 @@ body {
   text-decoration: none;
 }
 /* footer ends */
+
+.catalog-page main,
+.product-page main,
+.blog-page main,
+.news-page main { /* TODO: в общие стили? */
+  padding-top: 110px;
+}
+
 /* all pages ends */
 
 /* index.html */
@@ -715,12 +723,6 @@ body {
 }
 
 /* catalog-main.html, catalog-inner.html */
-.catalog-page main,
-.product-page main,
-.blog-page main { /* TODO: в общие стили? */
-  padding-top: 110px;
-}
-
 .catalog-page .page-header {
   margin-bottom: 150px;
 }
@@ -1269,14 +1271,58 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
+}
+
+.blog-page .post-caption {
   margin-bottom: 50px;
+}
+
+.blog-page .post-date {
+  margin-bottom: 0;
 }
 
 .blog-page .post-bottom {
   display: flex;
   justify-content: space-between;
 }
-
 /* blog.html ends */
 
+/* news.html */
+.news-page .news-card {
+  border: none;
+  background-color: #fffefd;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.news-page .news-card:not(:last-child) {
+  margin-bottom: 90px;
+}
+
+.news-page .news-title {
+  font-family: "Gothgam Pro Black", "Arial Black", sans-serif;
+  font-size: 43px;
+  margin-bottom: 50px;
+}
+
+.news-page .news-caption,
+.news-page .news-date {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.news-page .news-caption {
+  margin-bottom: 50px;
+}
+
+.news-page .news-date {
+  margin-bottom: 0;
+}
+
+.news-page .news-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+/* news.html ends */
 
