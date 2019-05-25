@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <title>Scrapberry - интернет-магазин канцеллярской продукции</title>
+  <title>Scrapberry - интернет-магазин ежедневников</title>
 </head>
 <body class="front-page">
   <header class="main-header">
     <div class="container">
       <div class="row align-items-center justify-content-center header-top">
-        <div class="col-xxl-3">
+        <div class="col-xxl-3 col-lg-4 col-10">
           <a><img class="logo" src="img/logo.png" alt="Логотип магазина Scrapberry" width="271" height="43"></a>
         </div>
-        <div class="col-xxl-4">
+        <div class="col-xxl-4 main-navigation-column">
           <nav class="main-navigation">
             <ul class="site-navigation">
               <li><a href="#">Продукты</a></li>
@@ -24,7 +24,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-xxl-5 d-flex justify-content-between">
+        <div class="col-xxl-5 col-xl-6 col-lg-7 d-flex justify-content-between contacts-menu">
           <dl class="call-us">
             <dt><b>+7 916 245 20 20</b></dt>
             <dd><a class="request-call-link" href="#">Заказать звонок</a></dd>
@@ -41,17 +41,31 @@
             </dd>
           </dl>
         </div>
+        <div class="col-xl-2 col-lg-1 col-2 burger-menu-column">
+          <div class="btn-group">
+            <button class="btn dropdown-toggle burger-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu dropdown-menu-right burger-menu">
+              <a class="dropdown-item menu-item" href="#">Продукты</a>
+              <a class="dropdown-item menu-item" href="#">FAQ</a>
+              <a class="dropdown-item menu-item" href="#">Магазин</a>
+              <a class="dropdown-item menu-item" href="#">Портфолио</a>
+              <a class="dropdown-item menu-item hidden-items" href="#">Заказать звонок</a>
+              <a class="dropdown-item menu-item hidden-items" href="#">Написать письмо</a>
+              <a class="dropdown-item menu-item hidden-items" href="#">Корзина</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="promo-slider" class="promo-slider carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="slide-1 d-flex">
-            <div class="container d-flex slide-caption">
-              <div class="row align-items-center">
+          <div class="slide slide-1">
+            <div class="container">
+              <div class="row">
                 <div class="col-xxl-6">
-                  <h3>Ежедневники</h3>
-                  <p>Согласно предыдущему, агентская комиссия трансформирует опрос, повышая конкуренцию. Маркетингово-ориентированное издание, безусловно, продуцирует показ баннера.</p>
+                  <h3 class="slide-header">Ежедневники</h3>
+                  <p class="slide-caption">Согласно предыдущему, агентская комиссия трансформирует опрос, повышая конкуренцию. Маркетингово-ориентированное издание, безусловно, продуцирует показ баннера.</p>
                   <a class="button rounded-pill" href="#">О нас</a>
                 </div>
               </div>
@@ -59,25 +73,25 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="slide-2 d-flex">
-            <div class="container d-flex slide-caption">
-                <div class="row align-items-center">
-                  <div class="col-xxl-6">
-                    <h3>Блокноты</h3>
-                    <p>Более того, управление брендом продуцирует выставочный стенд, оптимизируя бюджеты. Управление брендом достижимо в разумные сроки. Личность топ менеджера последовательно искажает потребительский ребрендинг, невзирая на действия конкурентов.</p>
-                    <a class="button rounded-pill" href="#">О нас</a>
-                  </div>
+          <div class="slide slide-2">
+            <div class="container">
+              <div class="row">
+                <div class="col-xxl-6">
+                  <h3 class="slide-header">Блокноты</h3>
+                  <p class="slide-caption">Более того, управление брендом продуцирует выставочный стенд, оптимизируя бюджеты. Управление брендом достижимо в разумные сроки. Личность топ менеджера последовательно искажает потребительский ребрендинг, невзирая на действия конкурентов.</p>
+                  <a class="button rounded-pill" href="#">О нас</a>
                 </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="carousel-item">
-          <div class="slide-3 d-flex">
-            <div class="container d-flex slide-caption">
-              <div class="row align-items-center">
+          <div class="slide slide-3">
+            <div class="container">
+              <div class="row">
                 <div class="col-xxl-6">
-                  <h3>Дипломы</h3>
-                  <p>Конкурент, анализируя результаты рекламной кампании, по-прежнему устойчив к изменениям спроса. Производство, как следует из вышесказанного, традиционно раскручивает конвергентный портрет потребителя. Рекламная заставка выражена наиболее полно.</p>
+                  <h3 class="slide-header">Дипломы</h3>
+                  <p class="slide-caption">Конкурент, анализируя результаты рекламной кампании, по-прежнему устойчив к изменениям спроса. Производство, как следует из вышесказанного, традиционно раскручивает конвергентный портрет потребителя. Рекламная заставка выражена наиболее полно.</p>
                   <a class="button rounded-pill" href="#">О нас</a>
                 </div>
               </div>
@@ -90,35 +104,35 @@
 
   <main>
     <header class="page-header">
-      <h1 class="visually-hidden header">Скрапберри - интернет-магазин канцеллярской продукции</h1>
+      <h1 class="visually-hidden header">Скрапберри - интернет-магазин ежедневников</h1>
     </header>
 
     <section class="front-page-section our-products">
       <div class="container">
         <h2 class="section-header">Наши продукты</h2>
         <div class="row">
-          <div class="col-xxl-3">
+          <div class="col-xxl-3 col-md-6">
             <div class="product-category diaries">
               <h3 class="header">Блокноты / Ежедневники</h3>
               <p class="caption">Ассоцианизм, согласно традиционным представлениям, социально понимает эмпирический бихевиоризм. </p>
               <a class="order-link" href="#">Конфигуратор заказа</a>
             </div>
           </div>
-          <div class="col-xxl-3">
+          <div class="col-xxl-3 col-md-6">
             <div class="product-category document-covers">
               <h3 class="header">Обложки на документы</h3>
               <p class="caption">Сознание начинает культурный гендер. Восприятие, конечно, однородно начинает код. Мышление понимает конформизм.</p>
               <a class="order-link" href="#">Конфигуратор заказа</a>
             </div>
           </div>
-          <div class="col-xxl-3">
+          <div class="col-xxl-3 col-md-6">
             <div class="product-category diplomas">
               <h3 class="header">Дипломы / Наградная продукция</h3>
               <p class="caption">Гендер, как принято считать, абсурдно просветляет код, как и предсказывает теория о бесполезном знании.</p>
               <a class="order-link" href="#">Конфигуратор заказа</a>
             </div>
           </div>
-          <div class="col-xxl-3">
+          <div class="col-xxl-3 col-md-6">
             <div class="product-category bags">
               <h3 class="header">Сумки</h3>
               <p class="caption"> Автоматизм, иcходя из того, что отражает позитивистский контраст. Скиннер, однако, настаивал, что закон неравномерен. </p>
@@ -133,13 +147,13 @@
       <div class="container">
         <h2 class="section-header">Магазин</h2>
         <div class="row">
-          <div class="col-xxl-6">
+          <div class="col-xl-6">
             <div class="card product-card">
-              <div class="row no-gutters">
-                <div class="col-4">
+              <div class="row">
+                <div class="col-md-4 d-flex justify-content-center align-items-start">
                   <img src="img/product-1.jpg" class="card-img product-img" alt="...">
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                     <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>
@@ -150,13 +164,13 @@
               </div>
             </div>
           </div>
-          <div class="col-xxl-6">
+          <div class="col-xl-6">
             <div class="card product-card">
-              <div class="row no-gutters">
-                <div class="col-4">
+              <div class="row">
+                <div class="col-md-4 d-flex justify-content-center align-items-start">
                   <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                     <p class="card-text product-caption">Чувство начинает страх, тем не менее как только ортодоксальность окончательно возобладает, даже эта маленькая лазейка будет закрыта.</p>
@@ -167,13 +181,13 @@
               </div>
             </div>
           </div>
-          <div class="col-xxl-6">
+          <div class="col-xl-6">
             <div class="card product-card">
-              <div class="row no-gutters">
-                <div class="col-4">
+              <div class="row">
+                <div class="col-md-4 d-flex justify-content-center align-items-start">
                   <img src="img/product-3.jpg" class="card-img product-img" alt="...">
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                     <p class="card-text product-caption">Тест социально вызывает оппортунический конформизм.</p>
@@ -184,13 +198,13 @@
               </div>
             </div>
           </div>
-          <div class="col-xxl-6">
+          <div class="col-xl-6">
             <div class="card product-card">
-              <div class="row no-gutters">
-                <div class="col-4">
+              <div class="row">
+                <div class="col-md-4 d-flex justify-content-center align-items-start">
                   <img src="img/product-4.jpg" class="card-img product-img" alt="...">
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                     <p class="card-text product-caption">Аутотренинг вызывает комплекс. Сновидение кумулятивно.</p>
@@ -201,13 +215,13 @@
               </div>
             </div>
           </div>
-          <div class="col-xxl-6">
+          <div class="col-xl-6">
             <div class="card product-card">
-              <div class="row no-gutters">
-                <div class="col-4">
+              <div class="row">
+                <div class="col-md-4 d-flex justify-content-center align-items-start">
                   <img src="img/product-5.jpg" class="card-img product-img" alt="...">
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                     <p class="card-text product-caption">Гетерогенность, как справедливо считает Ф.Энгельс, вызывает сексуальный гештальт.</p>
@@ -218,13 +232,13 @@
               </div>
             </div>
           </div>
-          <div class="col-xxl-6">
+          <div class="col-xl-6">
             <div class="card product-card">
-              <div class="row no-gutters">
-                <div class="col-4">
+              <div class="row">
+                <div class="col-md-4 d-flex justify-content-center align-items-start">
                   <img src="img/product-6.jpg" class="card-img product-img" alt="...">
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                     <p class="card-text product-caption">Самоактуализация осознаёт филосовский объект.</p>
@@ -243,8 +257,8 @@
         <div class="container">
           <h2 class="section-header">Блог</h2>
           <div class="row justify-content-between">
-            <div class="col-xxl-3">
-              <div class="card post-card">
+            <div class="col-xxl-3 col-md-6">
+              <div class="card post-card d-flex">
                 <img src="img/blog-1.jpg" class="card-img-top post-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title post-title">Встреча с лучшими</h5>
@@ -253,8 +267,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-xxl-3">
-              <div class="card post-card">
+            <div class="col-xxl-3 col-md-6">
+              <div class="card post-card d-flex">
                 <img src="img/blog-1.jpg" class="card-img-top post-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title post-title">Встреча с лучшими</h5>
@@ -263,8 +277,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-xxl-3">
-              <div class="card post-card">
+            <div class="col-xxl-3 col-md-6">
+              <div class="card post-card d-flex">
                 <img src="img/blog-1.jpg" class="card-img-top post-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title post-title">Встреча с лучшими</h5>
@@ -273,8 +287,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-xxl-3">
-              <div class="card post-card">
+            <div class="col-xxl-3 col-md-6">
+              <div class="card post-card d-flex">
                 <img src="img/blog-1.jpg" class="card-img-top post-img" alt="...">
                 <div class="card-body">
                   <h5 class="card-title post-title">Встреча с лучшими</h5>
@@ -292,8 +306,11 @@
           <h2 class="section-header">Портфолио</h2>
           <div class="row">
             <div class="col-xxl-12">
-              <img class="portfolio-image" src="img/portfolio-1.jpg" alt="...">
-              <a class="button see-all-link rounded-pill" href="#">Все портфолио</a>
+              <div class="portfolio-wrapper d-flex">
+                <div class="button-wrapper d-flex">
+                  <a class="button see-all-link rounded-pill" href="#">Все портфолио</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -303,7 +320,7 @@
       <div class="container">
         <h2 class="section-header">Новости</h2>
         <div class="row">
-          <div class="col-xxl-3">
+          <div class="col-xxl-3 col-md-6">
             <div class="card news-card">
               <img src="img/blog-1.jpg" class="card-img-top news-img" alt="...">
               <div class="card-body">
@@ -313,7 +330,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xxl-3">
+          <div class="col-xxl-3 col-md-6">
             <div class="card news-card">
               <img src="img/blog-1.jpg" class="card-img-top news-img" alt="...">
               <div class="card-body">
@@ -323,7 +340,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xxl-3">
+          <div class="col-xxl-3 col-md-6">
             <div class="card news-card">
               <img src="img/blog-1.jpg" class="card-img-top news-img" alt="...">
               <div class="card-body">
@@ -333,7 +350,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xxl-3 align-self-center">
+          <div class="col-xxl-3 col-md-6 align-self-center">
             <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
               <h5 class="form-title">Подписка на новости</h5>
               <input class="email-input" name="email" type="email" placeholder="Оставьте ваш email">
@@ -436,7 +453,7 @@
             <div class="col-xxl-12">
               <div class="footer-links-wrapper">
                 <a class="link personal-data-link" href="#">Закон о персональных данных</a>
-                <a class="link" href="#">Написать письмо</a>
+                <a class="link write-letter-link" href="#">Написать письмо</a>
               </div>
             </div>
           </div>
