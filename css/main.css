@@ -1492,7 +1492,7 @@ input[type="radio"].visually-hidden {
 }
 
 @media (max-width: 991px) {
-  .burger-menu .hidden-items {
+  .main-header .burger-menu .hidden-items {
     display: block;
   }
 
