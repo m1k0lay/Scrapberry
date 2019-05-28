@@ -74,9 +74,11 @@
 /* box-sizing: border-box - для всего документа + фикс для наследования */
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -185,8 +187,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header .logo {
-  width: 271px;
-  height: 43px;
+  max-width: 271px;
+  min-width: 190px;
 }
 
 .main-header .site-navigation {
@@ -632,16 +634,12 @@ input[type="radio"].visually-hidden {
   background-position: center center;
 }
 
-.front-page .portfolio .button-wrapper {
-  justify-content: flex-end;
-  padding: 60px 80px;
-}
-
 .front-page .portfolio .see-all-link {
   color: #d7d7d6;
   text-transform: none;
 
   border-color: #d7d7d6;
+  margin-bottom: 60px;
 }
 
 .front-page .subscribe-form {

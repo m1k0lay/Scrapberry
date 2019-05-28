@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Scrapberry - интернет-магазин ежедневников</title>
@@ -11,7 +12,7 @@
   <header class="main-header">
     <div class="container">
       <div class="row align-items-center justify-content-center header-top">
-        <div class="col-xxl-3 col-lg-4 col-10">
+        <div class="col-xxl-3 col-lg-4 col-9">
           <a><img class="logo" src="img/logo.png" alt="Логотип магазина Scrapberry" width="271" height="43"></a>
         </div>
         <div class="col-xxl-4 main-navigation-column">
@@ -41,9 +42,9 @@
             </dd>
           </dl>
         </div>
-        <div class="col-xl-2 col-lg-1 col-2 burger-menu-column">
+        <div class="col-xl-2 col-lg-1 col-3 burger-menu-column">
           <div class="btn-group">
-            <button class="btn dropdown-toggle burger-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <button class="btn dropdown-toggle burger-button" type="button" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false"></button>
             <div class="dropdown-menu dropdown-menu-right burger-menu">
               <a class="dropdown-item menu-item" href="#">Продукты</a>
               <a class="dropdown-item menu-item" href="#">FAQ</a>
@@ -57,6 +58,13 @@
         </div>
       </div>
     </div>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <h1 class="visually-hidden header">Скрапберри - интернет-магазин ежедневников</h1>
+    </header>
+
     <div id="promo-slider" class="promo-slider carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -100,12 +108,6 @@
         </div>
       </div>
     </div>
-  </header>
-
-  <main>
-    <header class="page-header">
-      <h1 class="visually-hidden header">Скрапберри - интернет-магазин ежедневников</h1>
-    </header>
 
     <section class="front-page-section our-products">
       <div class="container">
@@ -307,8 +309,10 @@
           <div class="row">
             <div class="col-xxl-12">
               <div class="portfolio-wrapper d-flex">
-                <div class="button-wrapper d-flex">
-                  <a class="button see-all-link rounded-pill" href="#">Все портфолио</a>
+                <div class="row justify-content-end">
+                  <div class=" col-md-12 col-lg-5 col-xl-4 col-xxl-3">
+                    <a class="button see-all-link rounded-pill" href="#">Все портфолио</a>
+                  </div>
                 </div>
               </div>
             </div>
