@@ -11,10 +11,10 @@
   <header class="main-header">
     <div class="container">
       <div class="row align-items-center justify-content-center header-top">
-        <div class="col-xxl-3">
-          <a href="#"><img class="logo" src="img/logo.png" alt="Логотип магазина Scrapberry" width="271" height="43"></a>
+        <div class="col-xxl-3 col-lg-4 col-9">
+          <a><img class="logo" src="img/logo.png" alt="Логотип магазина Scrapberry" width="271" height="43"></a>
         </div>
-        <div class="col-xxl-4">
+        <div class="col-xxl-4 main-navigation-column">
           <nav class="main-navigation">
             <ul class="site-navigation">
               <li><a href="#">Продукты</a></li>
@@ -24,7 +24,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-xxl-5 d-flex justify-content-between">
+        <div class="col-xxl-5 col-xl-6 col-lg-7 d-flex justify-content-between contacts-menu">
           <dl class="call-us">
             <dt><b>+7 916 245 20 20</b></dt>
             <dd><a class="request-call-link" href="#">Заказать звонок</a></dd>
@@ -41,6 +41,20 @@
             </dd>
           </dl>
         </div>
+        <div class="col-xl-2 col-lg-1 col-3 burger-menu-column">
+          <div class="btn-group">
+            <button class="btn dropdown-toggle burger-button" type="button" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu dropdown-menu-right burger-menu">
+              <a class="dropdown-item menu-item" href="#">Продукты</a>
+              <a class="dropdown-item menu-item" href="#">FAQ</a>
+              <a class="dropdown-item menu-item" href="#">Магазин</a>
+              <a class="dropdown-item menu-item" href="#">Портфолио</a>
+              <a class="dropdown-item menu-item hidden-items" href="#">Заказать звонок</a>
+              <a class="dropdown-item menu-item hidden-items" href="#">Написать письмо</a>
+              <a class="dropdown-item menu-item hidden-items" href="#">Корзина</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -50,7 +64,7 @@
       <header class="page-header">
         <h1 class="header">Магазин</h1>
         <div class="row">
-          <div class="col-xxl-3">
+          <div class="col-xxl-3 col-lg-4 catalog-navigation-wrapper">
             <div class="dropdown catalog-navigation show">
               <button class="btn dropdown-navigation-btn" disabled type="button" id="dropdown-navigation-btn" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Каталог товаров
@@ -69,8 +83,9 @@
               </div>
             </div>
           </div>
-          <div class="col-xxl-9">
+          <div class="col-xxl-9 col-lg-8 search-form-wrapper">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+              <button class="hidden-search-button" type="submit"></button>
               <input class="search-input" name="search-string" type="text" placeholder="Введите название товара">
               <button class="search-button" type="submit">Найти</button>
             </form>
@@ -83,11 +98,11 @@
           <div class="row">
             <div class="col-xxl-6 product-card-wrapper">
               <div class="card product-card">
-                <div class="row no-gutters">
-                  <div class="col-4">
+                <div class="row">
+                  <div class="col-md-4 d-flex justify-content-center align-items-start">
                     <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                   </div>
-                  <div class="col-8">
+                  <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                       <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>
@@ -102,11 +117,11 @@
 
             <div class="col-xxl-6 product-card-wrapper">
               <div class="card product-card">
-                <div class="row no-gutters">
-                  <div class="col-4">
+                <div class="row">
+                  <div class="col-md-4 d-flex justify-content-center align-items-start">
                     <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                   </div>
-                  <div class="col-8">
+                  <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                       <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>
@@ -121,11 +136,11 @@
 
             <div class="col-xxl-6 product-card-wrapper">
               <div class="card product-card">
-                <div class="row no-gutters">
-                  <div class="col-4">
+                <div class="row">
+                  <div class="col-md-4 d-flex justify-content-center align-items-start">
                     <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                   </div>
-                  <div class="col-8">
+                  <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                       <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>
@@ -140,11 +155,11 @@
 
             <div class="col-xxl-6 product-card-wrapper">
               <div class="card product-card">
-                <div class="row no-gutters">
-                  <div class="col-4">
+                <div class="row">
+                  <div class="col-md-4 d-flex justify-content-center align-items-start">
                     <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                   </div>
-                  <div class="col-8">
+                  <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                       <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>
@@ -159,11 +174,11 @@
 
             <div class="col-xxl-6 product-card-wrapper">
               <div class="card product-card">
-                <div class="row no-gutters">
-                  <div class="col-4">
+                <div class="row">
+                  <div class="col-md-4 d-flex justify-content-center align-items-start">
                     <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                   </div>
-                  <div class="col-8">
+                  <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                       <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>
@@ -178,11 +193,11 @@
 
             <div class="col-xxl-6 product-card-wrapper">
               <div class="card product-card">
-                <div class="row no-gutters">
-                  <div class="col-4">
+                <div class="row">
+                  <div class="col-md-4 d-flex justify-content-center align-items-start">
                     <img src="img/product-2.jpg" class="card-img product-img" alt="...">
                   </div>
-                  <div class="col-8">
+                  <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title product-title">Блокноты / ежедневники</h5>
                       <p class="card-text product-caption">Акцентуация отчуждает инсайт, следовательно тенденция к конформизму связана с менее низким интеллектом.</p>

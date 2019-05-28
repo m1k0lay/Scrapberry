@@ -858,11 +858,32 @@ input[type="radio"].visually-hidden {
 
 .catalog-page .search-form {
   display: flex;
+  align-items: center;
 }
 
-.search-form .search-input {
+.catalog-page .search-form .hidden-search-button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  margin-left: 15px;
+}
+
+.catalog-page .hidden-search-button::before {
+  content: "";
+  display: block;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog-page .search-form .search-input {
   flex: 1 1 100%;
-  padding: 16px 30px 16px 75px;
+  padding: 16px 30px 16px 60px;
   overflow: hidden;
 
   font-weight: 700;
@@ -873,25 +894,12 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.search-form .search-input:placeholder-shown {
+.catalog-page .search-form .search-input:placeholder-shown {
   color: #787878;
 }
 
-.catalog-page .search-form::before {
-  content: "";
-  position: absolute;
 
-  width: 31px;
-  height: 29px;
-  margin-top: 15px;
-  margin-left: 15px;
-
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.search-form .search-button {
+.catalog-page .search-form .search-button {
   min-width: 200px;
   padding: 12px 15px;
 
@@ -917,7 +925,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-page .product-card .product-img {
-  max-width: 200px;
+  max-width: 250px;
+  margin-bottom: 50px;
 
   border-radius: 50%;
 }
@@ -1124,7 +1133,8 @@ input[type="radio"].visually-hidden {
 }
 
 .product-page .product-card .product-img {
-  max-width: 200px;
+  max-width: 250px;
+  margin-bottom: 50px;
 
   border-radius: 50%;
 }
@@ -1432,6 +1442,7 @@ input[type="radio"].visually-hidden {
 }
 /* portfolio.html ends*/
 
+/* --- */
 
 .main-header .main-navigation-column {
   display: none;
@@ -1489,6 +1500,12 @@ input[type="radio"].visually-hidden {
   display: none !important;
 }
 
+@media (max-width: 576px) {
+  .catalog-page .search-form .search-button {
+    display: none;
+  }
+}
+
 @media (max-width: 991px) {
   .main-header .burger-menu .hidden-items {
     display: block;
@@ -1500,6 +1517,15 @@ input[type="radio"].visually-hidden {
 
   .front-page .portfolio .portfolio-wrapper {
     align-items: center;
+  }
+
+  .catalog-page .search-form-wrapper {
+    order: 1;
+    margin-bottom: 60px;
+  }
+
+  .catalog-page .catalog-navigation-wrapper {
+    order: 2;
   }
 }
 
