@@ -18,9 +18,9 @@
         <div class="col-xxl-4 main-navigation-column">
           <nav class="main-navigation">
             <ul class="site-navigation">
-                <li><a href="catalog-inner.html">Продукты</a></li>
+                <li><a href="products.html">Продукты</a></li>
               <li><a href="faq.html">FAQ</a></li>
-              <li><a href="catalog-main.html">Магазин</a></li>
+              <li><a href="market.html">Магазин</a></li>
               <li><a href="portfolio-catalog.html">Портфолио</a></li>
             </ul>
           </nav>
@@ -46,9 +46,9 @@
           <div class="btn-group">
             <button class="btn dropdown-toggle burger-button" type="button" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false"></button>
             <div class="dropdown-menu dropdown-menu-right burger-menu">
-              <a class="dropdown-item menu-item" href="catalog-inner.html">Продукты</a>
+              <a class="dropdown-item menu-item" href="products.html">Продукты</a>
               <a class="dropdown-item menu-item" href="faq.html">FAQ</a>
-              <a class="dropdown-item menu-item" href="catalog-main.html">Магазин</a>
+              <a class="dropdown-item menu-item" href="market.html">Магазин</a>
               <a class="dropdown-item menu-item" href="portfolio-catalog.html">Портфолио</a>
               <a class="dropdown-item menu-item hidden-items" href="#">Заказать звонок</a>
               <a class="dropdown-item menu-item hidden-items" href="#">Написать письмо</a>
@@ -60,7 +60,7 @@
     </div>
   </header>
 
-  <main class="inner-page catalog-page">
+  <main class="inner-page catalog-page products-page">
     <div class="container">
       <header class="page-header">
         <h1 class="header">Ежедневники</h1>
@@ -68,13 +68,13 @@
           <div class="col-xxl-9 col-lg-8 search-form-wrapper">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
               <button class="hidden-search-button" type="submit"></button>
-              <input class="search-input" name="search-string" type="text" placeholder="Введите название товара">
+              <input class="search-input" name="search-string" type="text" placeholder="Введите название товара" required>
               <button class="search-button" type="submit">Найти</button>
             </form>
           </div>
           <div class="col-xxl-3 col-lg-4 catalog-navigation-wrapper">
-            <div class="dropdown catalog-navigation">
-              <button class="btn dropdown-navigation-btn" type="button" id="dropdown-navigation-btn" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="dropdown catalog-navigation catalog-dropdown">
+              <button class="btn dropdown-navigation-btn navigation-menu-title" type="button" id="dropdown-navigation-btn" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Каталог товаров
               </button>
               <div class="dropdown-menu navigation-menu" aria-labelledby="dropdown-navigation-btn">
