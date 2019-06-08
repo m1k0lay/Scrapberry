@@ -48,8 +48,8 @@
 
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: "Gotham Pro Black";
+  font-weight: 900;
+  font-family: "Gotham Pro";
 
   src: local("Gotham Pro Black"), url("../fonts/GothamPro-Black.woff") format("woff");
 }
@@ -78,10 +78,10 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 
   font-weight: 400;
   font-family: "Gotham Pro", "Arial", sans-serif;
@@ -143,9 +143,9 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   padding: 18px 46px;
 
+  font-weight: 900;
   font-size: 22px;
   line-height: 28px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   white-space: nowrap;
@@ -187,8 +187,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header .logo {
-  max-width: 271px;
   min-width: 190px;
+  max-width: 271px;
 }
 
 .main-header .site-navigation {
@@ -230,8 +230,7 @@ input[type="radio"].visually-hidden {
 .main-header .request-call-link,
 .main-header .write-letter-link,
 .main-header .total-price {
-  color: #e3000b;
-  text-decoration: underline;
+  font-size: inherit;
 }
 
 .main-header .call-us::before,
@@ -364,14 +363,7 @@ input[type="radio"].visually-hidden {
 }
 /* footer ends */
 
-/* TODO: переделать */
-.catalog-page main,
-.product-page main,
-.blog-page main,
-.news-page main,
-.about-page main,
-.portfolio-page main {
-  /* TODO: переделать */
+.inner-page {
   padding-top: 110px;
 }
 /* all pages ends */
@@ -390,7 +382,7 @@ input[type="radio"].visually-hidden {
 
 .front-page .promo-slider .slide-header,
 .front-page .promo-slider .slide-caption {
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
+  font-weight: 900;
   word-wrap: break-word;
   hyphens: auto;
 
@@ -427,12 +419,13 @@ input[type="radio"].visually-hidden {
 .front-page .promo-slider .slide-3 {
   background-image: url("../img/slide-3.jpg");
 }
+
 .page-header .header {
   /* TODO: общие заголовки для всех страниц? */
   margin-bottom: 110px;
 
+  font-weight: 900;
   font-size: 36px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   text-align: center;
 }
 
@@ -440,8 +433,8 @@ input[type="radio"].visually-hidden {
   margin-top: 0;
   margin-bottom: 100px;
 
+  font-weight: 900;
   font-size: 43px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   text-align: center;
 }
 
@@ -481,8 +474,8 @@ input[type="radio"].visually-hidden {
 .front-page .product-category .header {
   margin-bottom: 30px;
 
+  font-weight: 900;
   font-size: 24px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   text-align: center;
 }
 
@@ -504,8 +497,8 @@ input[type="radio"].visually-hidden {
 }
 
 .front-page .product-category .order-link {
+  font-weight: 900;
   font-size: 24px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
   text-decoration: underline;
 }
@@ -529,8 +522,8 @@ input[type="radio"].visually-hidden {
 .front-page .product-card .product-title {
   margin-bottom: 30px;
 
+  font-weight: 900;
   font-size: 30px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
 }
 
 .front-page .product-card .card-body {
@@ -557,14 +550,14 @@ input[type="radio"].visually-hidden {
 .front-page .product-card .product-price {
   margin-bottom: 15px;
 
+  font-weight: 900;
   font-size: 30px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
 }
 
 .front-page .product-card .add-to-card-link {
+  font-weight: 900;
   font-size: 28px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
   text-decoration: underline;
 }
@@ -590,8 +583,8 @@ input[type="radio"].visually-hidden {
 .front-page .news-card .news-title {
   margin-bottom: 30px;
 
+  font-weight: 900;
   font-size: 24px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
 }
 
 .front-page .post-card .post-caption,
@@ -614,8 +607,8 @@ input[type="radio"].visually-hidden {
 
 .front-page .post-card .read-more-link,
 .front-page .news-card .read-more-link {
+  font-weight: 900;
   font-size: 24px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
   text-decoration: underline;
 }
@@ -635,11 +628,12 @@ input[type="radio"].visually-hidden {
 }
 
 .front-page .portfolio .see-all-link {
+  margin-bottom: 60px;
+
   color: #d7d7d6;
   text-transform: none;
 
   border-color: #d7d7d6;
-  margin-bottom: 60px;
 }
 
 .front-page .subscribe-form {
@@ -651,9 +645,9 @@ input[type="radio"].visually-hidden {
 .front-page .subscribe-form .form-title {
   margin-bottom: 70px;
 
+  font-weight: 900;
   font-size: 30px;
   line-height: 50px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   text-transform: uppercase;
 }
 
@@ -705,8 +699,8 @@ input[type="radio"].visually-hidden {
 .front-page .review-card .review-author {
   margin-bottom: 0;
 
+  font-weight: 900;
   font-size: 24px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   text-align: center;
   color: #e3000b;
 }
@@ -746,6 +740,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/closing-quote.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: contain;
 }
 
 .front-page .review-card .card-body::after {
@@ -759,6 +754,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/opening-quote.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: contain;
 }
 
 .front-page .review-card .leave-feedback-link {
@@ -768,8 +764,8 @@ input[type="radio"].visually-hidden {
   margin-top: 25px;
   margin-left: 75px;
 
+  font-weight: 900;
   font-size: 24px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
   text-decoration: underline;
 }
@@ -789,9 +785,9 @@ input[type="radio"].visually-hidden {
   width: 100%;
   padding: 12px 70px 12px 15px;
 
+  font-weight: 900;
   font-size: 24px;
   line-height: 34px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   text-align: initial;
   color: #ffffff;
   white-space: nowrap;
@@ -862,17 +858,19 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-page .search-form .hidden-search-button {
-  border: 0;
-  padding: 0;
-  background-color: transparent;
   position: absolute;
+
   margin-left: 15px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
 }
 
 .catalog-page .hidden-search-button::before {
   content: "";
-  display: block;
 
+  display: block;
   width: 30px;
   height: 30px;
 
@@ -898,7 +896,6 @@ input[type="radio"].visually-hidden {
   color: #787878;
 }
 
-
 .catalog-page .search-form .search-button {
   min-width: 200px;
   padding: 12px 15px;
@@ -913,8 +910,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-page .order-link {
+  font-weight: 900;
   font-size: 24px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
   text-decoration: underline;
 }
@@ -934,8 +931,8 @@ input[type="radio"].visually-hidden {
 .catalog-page .product-card .product-title {
   margin-bottom: 20px;
 
+  font-weight: 900;
   font-size: 22px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
 }
 
 .catalog-page .product-card .card-body {
@@ -954,8 +951,8 @@ input[type="radio"].visually-hidden {
 .catalog-page .product-card .product-price {
   margin-bottom: 15px;
 
+  font-weight: 900;
   font-size: 22px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
 }
 
@@ -963,8 +960,8 @@ input[type="radio"].visually-hidden {
 .catalog-page .product-card .add-to-card-link {
   display: block;
 
+  font-weight: 900;
   font-size: 22px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
   text-decoration: underline;
 }
@@ -1104,8 +1101,8 @@ input[type="radio"].visually-hidden {
 .product-page .product-card-big .product-price {
   margin-bottom: 40px;
 
+  font-weight: 900;
   font-size: 46px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
 }
 
 .product-page .product-card-big .buy-product-button {
@@ -1142,8 +1139,8 @@ input[type="radio"].visually-hidden {
 .product-page .product-card .product-title {
   margin-bottom: 20px;
 
+  font-weight: 900;
   font-size: 22px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
 }
 
 .product-page .product-card .card-body {
@@ -1162,8 +1159,8 @@ input[type="radio"].visually-hidden {
 .product-page .product-card .product-price {
   margin-bottom: 15px;
 
+  font-weight: 900;
   font-size: 22px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
 }
 
@@ -1171,8 +1168,8 @@ input[type="radio"].visually-hidden {
 .product-page .product-card .add-to-card-link {
   display: block;
 
+  font-weight: 900;
   font-size: 22px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
   color: #e3000b;
   text-decoration: underline;
 }
@@ -1338,8 +1335,8 @@ input[type="radio"].visually-hidden {
 .blog-page .post-title {
   margin-bottom: 50px;
 
+  font-weight: 900;
   font-size: 42px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
 }
 
 .blog-page .post-caption,
@@ -1375,8 +1372,8 @@ input[type="radio"].visually-hidden {
 .news-page .news-title {
   margin-bottom: 50px;
 
+  font-weight: 900;
   font-size: 42px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
 }
 
 .news-page .news-caption,
@@ -1427,8 +1424,8 @@ input[type="radio"].visually-hidden {
 .portfolio-page .portfolio-title {
   margin-bottom: 50px;
 
+  font-weight: 900;
   font-size: 42px;
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
 }
 
 .portfolio-page .portfolio-caption {
@@ -1438,9 +1435,39 @@ input[type="radio"].visually-hidden {
 }
 
 .portfolio-page .return-link {
-  font-family: "Gotham Pro Black", "Arial Black", sans-serif;
+  font-weight: 900;
 }
 /* portfolio.html ends*/
+
+/* faq.html */
+.faq-page .question {
+  margin-bottom: 100px;
+}
+
+.faq-page .faq-section:last-child {
+  margin-bottom: 70px;
+}
+
+.faq-page .title {
+  margin-bottom: 45px;
+
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 120%;
+  color: #e03d3e;
+}
+
+.faq-page .answer {
+  margin-bottom: 35px;
+
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.faq-page .answer:last-child {
+  margin-bottom: 0;
+}
+/* fag.html ends */
 
 /* --- */
 
@@ -1504,6 +1531,23 @@ input[type="radio"].visually-hidden {
   .catalog-page .search-form .search-button {
     display: none;
   }
+
+  .faq-page .title,
+  .faq-page .answer {
+    word-wrap: wrap;
+    word-break: break-all;
+    hyphens: auto;
+
+    -webkit-hyphenate-limit-after: 3;
+    -webkit-hyphenate-limit-before: 3;
+    -webkit-hyphenate-limit-chars: 6 3 3;
+            hyphenate-limit-chars: 6 3 3;
+    hyphenate-limit-last: always;
+    hyphenate-limit-lines: 2;
+    hyphenate-limit-zone: 8%;
+  }
+
+
 }
 
 @media (max-width: 991px) {
@@ -1535,6 +1579,17 @@ input[type="radio"].visually-hidden {
   }
 }
 
+@media (min-width: 1200px) {
+  .faq-page .title {
+    font-size: 46px;
+  }
+
+  .faq-page .answer {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
 @media (max-width: 1599px) {
   .main-header .burger-menu-column {
     display: block;
@@ -1544,5 +1599,14 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1600px) {
   .main-header .main-navigation-column {
     display: block;
+  }
+
+  .faq-page .title {
+    font-size: 56px;
+  }
+
+  .faq-page .answer {
+    font-size: 32px;
+    line-height: 45px;
   }
 }
