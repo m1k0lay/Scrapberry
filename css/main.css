@@ -1580,6 +1580,10 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: 1200px) {
+  .faq-page .header {
+    font-size: 45px;
+  }
+
   .faq-page .title {
     font-size: 46px;
   }
@@ -1599,6 +1603,10 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1600px) {
   .main-header .main-navigation-column {
     display: block;
+  }
+
+  .faq-page .header {
+    font-size: 55px;
   }
 
   .faq-page .title {
