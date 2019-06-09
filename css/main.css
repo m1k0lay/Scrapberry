@@ -1507,6 +1507,8 @@ input[type="radio"].visually-hidden {
   .front-page .promo-slider .slide-header,
   .front-page .promo-slider .slide-caption,
   .front-page .review-card .review-text,
+  .product-card .product-title,
+  .product-card .product-caption,
   .product-page .product-card-big .product-caption,
   .blog-page .post-title,
   .blog-page .post-caption,
